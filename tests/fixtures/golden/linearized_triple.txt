@@ -1,0 +1,1 @@
+[ENTITY] Knowledge Graph [RELATION] supports [ENTITY] Factual Grounding

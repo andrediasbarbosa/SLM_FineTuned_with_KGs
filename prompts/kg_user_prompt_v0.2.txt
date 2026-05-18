@@ -1,0 +1,42 @@
+You are extracting a knowledge graph from a document chunk.
+
+Document ID:
+{{document_id}}
+
+Chunk ID:
+{{chunk_id}}
+
+Text chunk:
+{{chunk_text}}
+
+Instructions:
+- Extract every named entity that appears in the text: concepts, methods, models, people, organisations, datasets, metrics, or any other category that fits.
+- Extract every relation between entities that is stated or clearly implied by the text.
+- Use any entity types and relation labels that best describe the content — do not restrict yourself to a fixed list.
+- Every entity must have a unique local_id (e1, e2, …) used to cross-reference in relations.
+- Relations must reference entities by their local_id values.
+- Include a short evidence_text quote from the source text for every entity and relation.
+- If no entities or relations are present, return empty arrays.
+
+Return ONLY valid JSON in exactly this format — no prose, no markdown fences:
+{
+  "entities": [
+    {
+      "local_id": "e1",
+      "name": "<entity name>",
+      "type": "<entity type>",
+      "description": "<one-line description>",
+      "evidence_text": "<short quote from the text>",
+      "confidence": 0.9
+    }
+  ],
+  "relations": [
+    {
+      "head_local_ids": ["e1"],
+      "relation_type": "<relation label>",
+      "tail_local_ids": ["e2"],
+      "evidence_text": "<short quote from the text>",
+      "confidence": 0.85
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "config_hash": "",
+  "content_hash": "sha256:a79b55d59a47473f0941f4ecc0ce98250790161dea0ef8abb45297164b9ac21a",
+  "created_at": "2026-05-16T12:40:27Z",
+  "generator": "pretrain_builder_v0.2",
+  "id": "pretrain_v0.2",
+  "kg_snapshot_id": "kg_domain_v0.1",
+  "skipped_records": 0,
+  "test_records": 54,
+  "token_estimate": 171258,
+  "total_records": 1509,
+  "train_records": 1380,
+  "val_records": 75
+}

@@ -1,0 +1,9 @@
+kg_snapshot:
+  id: kg_domain_v0.1
+  created_at: 2026-05-13T19:06:52Z
+  schema_version: kg_schema_v0.2
+  entity_count: 613
+  relation_count: 356
+  entities_hash: sha256:33e2782018cc1e41ce342cba141032b47bb3d4f2166f5617b77a896822119dd7
+  relations_hash: sha256:c2db7758abdcf6de8a66146dd03ce1e3f5fcb050c34f7add61508dd4a1d00243
+  snapshot_hash: sha256:f20fefe9fefc120537d53de2f8335aa44820017a3b3fadddd050aea56e39a8df

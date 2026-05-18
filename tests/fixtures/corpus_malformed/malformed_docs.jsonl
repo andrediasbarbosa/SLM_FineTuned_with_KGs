@@ -1,0 +1,3 @@
+{"id": "good_001", "text": "This line is valid JSON.", "language": "en", "trust_level": "trusted"}
+{not valid json at all
+{"id": "good_002", "text": "This line is also valid.", "language": "en", "trust_level": "trusted"}

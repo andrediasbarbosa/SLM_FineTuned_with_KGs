@@ -1,0 +1,12 @@
+dataset:
+  kg_snapshot_id: kg_domain_v0.1
+  corpus_chunks_path: data/processed/my_corpus/chunks.jsonl
+  max_records: 20000
+  max_char_length: 3600
+  max_hop_paths: 500
+  generator: pretrain_builder_v0.2
+  splits:
+    train: 0.90
+    validation: 0.05
+    test: 0.05
+    seed: 42

@@ -1,0 +1,36 @@
+corpus:
+  id: corpus_v0.1
+  source_root: data/raw
+  output_root: data/processed/corpus_v0.1
+  encoding: utf-8
+
+  chunking:
+    min_chunk_chars: 300
+    max_chunk_chars: 2000
+    overlap_chars: 100
+    token_count_method: char_heuristic
+
+  deduplication:
+    enabled: true
+    method: exact_hash
+    scope: chunks
+
+  splits:
+    train: 0.80
+    validation: 0.10
+    test: 0.10
+    seed: 42
+    split_by: document_id
+
+  quality:
+    min_language_score: 0.80
+    trusted_source_types: [txt, md, jsonl, pdf]
+    warn_missing_author: true
+    warn_missing_license: true
+    fail_on_duplicate_ids: true
+    fail_on_malformed_jsonl: true
+    fail_on_unreadable_files: true
+
+  manifest:
+    write: true
+    hash_algorithm: sha256

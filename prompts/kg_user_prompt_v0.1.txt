@@ -1,0 +1,24 @@
+You are extracting a knowledge graph from a document chunk.
+
+Document ID:
+{{document_id}}
+
+Chunk ID:
+{{chunk_id}}
+
+Knowledge graph schema:
+{{kg_schema}}
+
+Allowed entity types:
+{{allowed_entity_types}}
+
+Allowed relation types:
+{{allowed_relation_types}}
+
+Text chunk:
+{{chunk_text}}
+
+Extract candidate entities and relations from the text.
+Return only valid JSON matching the required output schema.
+Do not invent facts that are not supported by the text.
+Include evidence spans for every relation.

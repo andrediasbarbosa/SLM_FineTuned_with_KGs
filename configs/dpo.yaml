@@ -1,0 +1,9 @@
+# Training config for B5: DPO preference optimisation on KG preference dataset.
+split: train
+num_epochs: 1
+batch_size: 2
+learning_rate: 5.0e-5
+beta: 0.1              # KL penalty strength; lower = more divergence from reference
+max_length: 512
+warmup_steps: 10
+logging_steps: 5

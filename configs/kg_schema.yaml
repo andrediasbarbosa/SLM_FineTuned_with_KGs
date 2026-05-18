@@ -1,0 +1,226 @@
+schema_version: kg_schema_v0.2
+
+entity_types:
+
+  - name: Concept
+    description: Abstract idea, principle, or theoretical construct
+    required_fields: [id, canonical_name]
+
+  - name: Method
+    description: Technique, algorithm, approach, or procedure
+    required_fields: [id, canonical_name]
+
+  - name: Model
+    description: Trained ML/AI model, mathematical model, or computational model
+    required_fields: [id, canonical_name]
+
+  - name: Dataset
+    description: Dataset, benchmark, corpus, or data collection
+    required_fields: [id, canonical_name]
+
+  - name: Metric
+    description: Evaluation metric, performance measure, or score (e.g. F1, BLEU, accuracy)
+    required_fields: [id, canonical_name]
+
+  - name: Task
+    description: Computational or scientific task, problem, or challenge (e.g. NER, QA, classification)
+    required_fields: [id, canonical_name]
+
+  - name: System
+    description: Software system, platform, framework, or pipeline
+    required_fields: [id, canonical_name]
+
+  - name: Architecture
+    description: Neural network or system architecture (e.g. Transformer, CNN, encoder-decoder)
+    required_fields: [id, canonical_name]
+
+  - name: Technology
+    description: Broad technology area or paradigm (e.g. deep learning, reinforcement learning)
+    required_fields: [id, canonical_name]
+
+  - name: Tool
+    description: Software library, toolkit, or instrument (e.g. PyTorch, spaCy, Hugging Face)
+    required_fields: [id, canonical_name]
+
+  - name: Experiment
+    description: Experimental study, trial, ablation, or evaluation run
+    required_fields: [id, canonical_name]
+
+  - name: Finding
+    description: Experimental result, conclusion, or empirical discovery
+    required_fields: [id, canonical_name]
+
+  - name: Hypothesis
+    description: Research question, conjecture, or claim under investigation
+    required_fields: [id, canonical_name]
+
+  - name: Property
+    description: Feature, characteristic, attribute, or parameter of an entity
+    required_fields: [id, canonical_name]
+
+  - name: Application
+    description: Use case, deployment domain, or real-world application area
+    required_fields: [id, canonical_name]
+
+  - name: Field
+    description: Research discipline or domain (e.g. NLP, computer vision, bioinformatics)
+    required_fields: [id, canonical_name]
+
+  - name: Process
+    description: Workflow, pipeline, training procedure, or multi-step process
+    required_fields: [id, canonical_name]
+
+  - name: Person
+    description: Researcher, author, or practitioner
+    required_fields: [id, canonical_name]
+
+  - name: Organisation
+    description: University, company, research lab, or institution
+    required_fields: [id, canonical_name]
+
+  - name: Document
+    description: Paper, book, report, thesis, or technical document
+    required_fields: [id, canonical_name]
+
+
+relation_types:
+
+  - name: uses
+    description: Subject employs or relies on the object
+    domain: Method
+    range: Dataset
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: improves
+    description: Subject achieves better performance than the object on some measure
+    domain: Method
+    range: Metric
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: outperforms
+    description: Subject achieves higher scores than the object on a benchmark or task
+    domain: Model
+    range: Model
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: based_on
+    description: Subject is derived from or grounded in the object
+    domain: Method
+    range: Concept
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: extends
+    description: Subject builds upon or generalises the object
+    domain: Method
+    range: Method
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: evaluates
+    description: Subject assesses or tests the object
+    domain: Experiment
+    range: Model
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: trained_on
+    description: Subject model was trained using the object dataset
+    domain: Model
+    range: Dataset
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: achieves
+    description: Subject attains the object result or metric value
+    domain: Model
+    range: Metric
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: applies_to
+    description: Subject is applicable to or targets the object task or domain
+    domain: Method
+    range: Task
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: defines
+    description: Subject introduces or formally defines the object
+    domain: Document
+    range: Concept
+    head_arity: {min: 1, max: 1}
+    tail_arity: {min: 1, max: null}
+
+  - name: supports
+    description: Subject provides evidence for or corroborates the object
+    domain: Finding
+    range: Hypothesis
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: contradicts
+    description: Subject provides evidence against or refutes the object
+    domain: Finding
+    range: Hypothesis
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: proposed_by
+    description: Subject method, model, or system was proposed by the object person or organisation
+    domain: Method
+    range: Person
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: authored
+    description: Subject person wrote or co-authored the object document
+    domain: Person
+    range: Document
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: part_of
+    description: Subject is a component or sub-element of the object
+    domain: Concept
+    range: Concept
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: requires
+    description: Subject depends on or necessitates the object
+    domain: Method
+    range: Tool
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: developed_by
+    description: Subject tool, model, or system was developed by the object person or organisation
+    domain: System
+    range: Organisation
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: measured_by
+    description: Subject task or model performance is quantified using the object metric
+    domain: Task
+    range: Metric
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: causes
+    description: Subject brings about or leads to the object
+    domain: Concept
+    range: Concept
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: related_to
+    description: Subject has a general or unspecified association with the object
+    domain: Concept
+    range: Concept
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}

@@ -1,0 +1,31 @@
+{
+  "entities": [
+    {
+      "local_id": "e1",
+      "name": "Knowledge Graph",
+      "type": "Concept",
+      "aliases": ["KG"],
+      "description": "A structured representation of entities and their relationships.",
+      "evidence_text": "A knowledge graph is a structured representation of entities and their relationships.",
+      "confidence": 0.95
+    },
+    {
+      "local_id": "e2",
+      "name": "Factual Grounding",
+      "type": "Concept",
+      "aliases": [],
+      "description": "The process of anchoring model outputs to verified factual sources.",
+      "evidence_text": "Knowledge graphs support factual grounding and reasoning in AI systems.",
+      "confidence": 0.91
+    }
+  ],
+  "relations": [
+    {
+      "head_local_ids": ["e1"],
+      "relation_type": "supports",
+      "tail_local_ids": ["e2"],
+      "evidence_text": "Knowledge graphs support factual grounding and reasoning in AI systems.",
+      "confidence": 0.89
+    }
+  ]
+}

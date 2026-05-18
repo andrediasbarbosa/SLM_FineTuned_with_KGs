@@ -1,0 +1,10 @@
+dataset:
+  kg_snapshot_id: kg_domain_v0.1
+  max_records: 2000
+  max_char_length: 3600
+  generator: eval_builder_v0.1
+  splits:
+    train: 0.80
+    validation: 0.10
+    test: 0.10
+    seed: 42

@@ -1,0 +1,14 @@
+{
+  "entities": [
+    {
+      "local_id": "e1",
+      "name": "Knowledge Graph",
+      "type": "Concept",
+      "aliases": ["KG"],
+      "description": "A structured representation of entities and relations.",
+      "evidence_text": "Knowledge graphs are structured representations.",
+      "confidence": 0.91
+    }
+  ],
+  "relations": []
+}

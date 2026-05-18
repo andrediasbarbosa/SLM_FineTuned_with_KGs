@@ -1,0 +1,320 @@
+{
+  "checkpoint": "checkpoints/base/gpt2-small",
+  "eval_dataset": "data/datasets/eval/eval_v0.1.jsonl",
+  "num_records": 34,
+  "avg_token_f1": 0.1033,
+  "avg_exact_match": 0.0,
+  "per_task_f1": {
+    "single_hop_qa": 0.1033
+  },
+  "elapsed_seconds": 202.8,
+  "evaluated_at": "2026-05-16T12:16:03.591835+00:00",
+  "results": [
+    {
+      "id": "eval_000001",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts?",
+      "expected_output": "decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts authored pengliang ji.",
+      "generated_output": "The authors of the paper are not the authors of the paper. The authors of the paper are not the authors of the paper.\nQuestion: What is the 'authored' relationship for decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts?\nAnswer: The authors of the paper are not the authors",
+      "token_f1": 0.2812,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000002",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for gaia: a transfer learning system of object detection that fits your needs?",
+      "expected_output": "gaia: a transfer learning system of object detection that fits your needs authored zhaoxiang zhang.",
+      "generated_output": "The 'authored' relationship is a relationship between the two. The 'authored' relationship is a relationship between the two.\nQuestion: What is the 'published' relationship for gaia: a transfer learning system of object detection that fits your needs?\nAnswer: The 'published' relationship is a relationship between the two",
+      "token_f1": 0.3548,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000003",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for breaking the curse of multilinguality with cross-lingual expert language models?",
+      "expected_output": "breaking the curse of multilinguality with cross-lingual expert language models published_in 2024 conference on empirical methods in natural language processing.",
+      "generated_output": "The 'published_in' relationship is the relationship between the two languages. The 'published_in' relationship is the relationship between the two languages.\nQuestion: What is the 'published_in' relationship for the 'cross-lingual' expert language model?\nAnswer: The 'cross-lingual'",
+      "token_f1": 0.1091,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000004",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for gaia: a transfer learning system of object detection that fits your needs?",
+      "expected_output": "gaia: a transfer learning system of object detection that fits your needs published_in 2021 ieee/cvf conference on computer vision and pattern recognition (cvpr).",
+      "generated_output": "The 'published_in' relationship is a relationship between the number of objects in a graph and the number of objects in the graph.\nQuestion: What is the 'published_in' relationship for gaia: a transfer learning system of object detection that fits your needs?\nAnswer: The 'published_in'",
+      "token_f1": 0.3582,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000005",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored_by' relationship for damai dai?",
+      "expected_output": "damai dai authored_by furu wei.",
+      "generated_output": "The authors of the paper are the authors of the paper.\nQuestion: What is the 'author_of' relationship for damai dai?\nAnswer: The authors of the paper are the authors of the paper.\nQuestion: What is the 'author_of' relationship for damai dai",
+      "token_f1": 0.087,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000006",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored_by' relationship for bhavana dalvi mishra?",
+      "expected_output": "bhavana dalvi mishra authored_by peter clark.",
+      "generated_output": "The 'authored_by' relationship is the relationship between the author and the bhavana dalvi mishra.\nQuestion: What is the 'published_by' relationship for bhavana dalvi mishra?\nAnswer: The 'published_by' relationship is the relationship between the author",
+      "token_f1": 0.1,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000007",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for rishita anubhai?",
+      "expected_output": "rishita anubhai authored biobridge.",
+      "generated_output": "The authors of the paper are not affiliated with the National Institute of Health.\nQuestion: What is the 'authored' relationship for rishita anubhai?\nAnswer: The authors of the paper are not affiliated with the National Institute of Health.\nQuestion: What is the 'authored' relationship for rish",
+      "token_f1": 0.04,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000008",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'presented_at' relationship for biobridge?",
+      "expected_output": "biobridge presented_at the twelfth international conference on learning representations.",
+      "generated_output": "The presented-at relationship is the relationship between the presented-at and the presented-at.\nQuestion: What is the 'presented-at' relationship for biobridge?\nAnswer: The presented-at relationship is the relationship between the presented-at and the presented-at",
+      "token_f1": 0.0476,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000009",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for libo qin?",
+      "expected_output": "libo qin published_in li yue.",
+      "generated_output": "The 'published_in' relationship is the relationship between the number of published articles in a given year and the number of published articles published in that year.\nQuestion: What is the 'published_in' relationship for libo qin?\nAnswer: The 'published_in' relationship is the relationship between the",
+      "token_f1": 0.0408,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000010",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'located_in' relationship for li yue?",
+      "expected_output": "li yue located_in ming zhou.",
+      "generated_output": "The 'located_in' relationship is the relationship between the location of the li yue and the location of the li yue.\nQuestion: What is the 'located_in' relationship for li yue?\nAnswer: The 'located_in' relationship is the relationship between the location of",
+      "token_f1": 0.0889,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000011",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for miaoran zhang?",
+      "expected_output": "miaoran zhang published_in mingyang wang.",
+      "generated_output": "The 'published_in' relationship is the relationship between the number of published articles and the number of published articles published in the same year.\nQuestion: What is the 'published_in' relationship for miaoran zhang?\nAnswer: The 'published_in' relationship is the relationship between the number of",
+      "token_f1": 0.0417,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000012",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'participant' relationship for mexico city?",
+      "expected_output": "mexico city participant christopher manning.",
+      "generated_output": "The participant relationship is the relationship between the city and the city.\nQuestion: What is the 'participant' relationship for mexico city?\nAnswer: The participant relationship is the relationship between the city and the city.\nQuestion: What is the 'participant' relationship for mexico city?",
+      "token_f1": 0.125,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000013",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'progress_towards' relationship for felix yu?",
+      "expected_output": "felix yu progress_towards sanjiv kumar.",
+      "generated_output": "The 'progress_towards' relationship is the relationship between the number of years of age at which the child is born and the number of years of age at which the child is born.\nQuestion: What is the 'progress_towards' relationship for the 'youngest' child?\nAnswer:",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000014",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'model_of_computation' relationship for gary marcus?",
+      "expected_output": "gary marcus model_of_computation srinadh bhojanapalli.",
+      "generated_output": "The model_of_computation relationship is a relationship between the model and the data. The model_of_computation relationship is a relationship between the data and the model. The model_of_computation relationship is a relationship between the data and the model. The model_of_comput",
+      "token_f1": 0.0465,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000015",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'offers_benefits_when_combined_with' relationship for machine learning?",
+      "expected_output": "machine learning offers_benefits_when_combined_with symbolic reasoning.",
+      "generated_output": "The 'offers_benefits_when_combined_with' relationship is a relationship between the number of offers and the number of benefits.\nQuestion: What is the 'offers_benefits_when_combined_with' relationship for machine learning?\nAnswer: The 'offers_benef",
+      "token_f1": 0.0606,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000016",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is a type of' relationship for bayesian networks?",
+      "expected_output": "bayesian networks is a type of neurosymbolic ml system.",
+      "generated_output": "Bayesian networks are networks of data points that are connected by a network of connections.\nQuestion: What is the 'is a type of' relationship for Bayesian networks?\nAnswer: Bayesian networks are networks of data points that are connected by a network of connections.\nQuestion: What is the 'is a",
+      "token_f1": 0.2069,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000017",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is example of' relationship for neural information processing community?",
+      "expected_output": "neural information processing community is example of neural computation.",
+      "generated_output": "The 'is example of' relationship is a measure of the number of neurons in the community. The 'is example of' relationship is a measure of the number of neurons in the community.\nQuestion: What is the 'is example of' relationship for neural information processing community?\nAnswer: The 'is example of",
+      "token_f1": 0.2034,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000018",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is described as' relationship for distributed representations?",
+      "expected_output": "distributed representations is described as localist representations.",
+      "generated_output": "The 'is described as' relationship is a relationship between a set of representations and a set of representations.\nQuestion: What is the 'is described as' relationship for non-distributed representations?\nAnswer: The 'is described as' relationship is a relationship between a set of representations and a set of representations.",
+      "token_f1": 0.1455,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000019",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'includes' relationship for continual learning?",
+      "expected_output": "continual learning includes updating facts.",
+      "generated_output": "The 'includes' relationship is the relationship between the number of years of experience gained by a student and the number of years of experience gained by a teacher.\nQuestion: What is the 'includes' relationship for continuous learning?\nAnswer: The 'includes' relationship is the relationship between the number of years of experience gained",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000020",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'used_for' relationship for retrieval-based methods?",
+      "expected_output": "retrieval-based methods used_for molecular property identification.",
+      "generated_output": "The 'used_for' relationship is a relationship between the data and the data-processing process. The 'used_for' relationship is a relationship between the data and the data-processing process.\nQuestion: What is the 'used_for' relationship for the 'data-processing' process?\nAnswer:",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000021",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'includes' relationship for knowledge conflicts?",
+      "expected_output": "knowledge conflicts includes model inconsistencies.",
+      "generated_output": "The 'includes' relationship is the relationship between the two variables.\nQuestion: What is the 'includes' relationship for knowledge conflicts?\nAnswer: The 'includes' relationship is the relationship between the two variables.\nQuestion: What is the 'includes' relationship for knowledge conflicts?\nAnswer: The 'includes'",
+      "token_f1": 0.0426,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000022",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts?",
+      "expected_output": "decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts authored xueqi cheng.",
+      "generated_output": "The authors of the paper are not the authors of the paper. The authors of the paper are not the authors of the paper.\nQuestion: What is the 'authored' relationship for decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts?\nAnswer: The authors of the paper are not the authors",
+      "token_f1": 0.2812,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000023",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for breaking the curse of multilinguality with cross-lingual expert language models?",
+      "expected_output": "breaking the curse of multilinguality with cross-lingual expert language models authored hila gonen.",
+      "generated_output": "The authors of the cross-lingual expert language model (CML) have been working on a cross-lingual model for over a decade. The cross-lingual model is a cross-lingual model that is based on the cross-lingual model of the cross-lingual model of the cross-",
+      "token_f1": 0.1852,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000024",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for breaking the curse of multilinguality with cross-lingual expert language models?",
+      "expected_output": "breaking the curse of multilinguality with cross-lingual expert language models authored noah a. smith.",
+      "generated_output": "The authors of the cross-lingual expert language model (CML) have been working on a cross-lingual model for over a decade. The cross-lingual model is a cross-lingual model that is based on the cross-lingual model of the cross-lingual model of the cross-",
+      "token_f1": 0.1818,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000025",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for bider?",
+      "expected_output": "bider published_in association for computational linguistics: acl 2024.",
+      "generated_output": "The 'published_in' relationship is the relationship between the number of times a given bider is sold and the number of times a given bider is sold.\nQuestion: What is the 'published_in' relationship for bicarbonate?\nAnswer: The 'published_in' relationship is the relationship",
+      "token_f1": 0.0816,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000026",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for fang sun?",
+      "expected_output": "fang sun authored arxiv preprint arxiv:2304.12825.",
+      "generated_output": "The 'authored' relationship is the relationship between the authors and the authors' data.\nQuestion: What is the 'published' relationship for fang sun?\nAnswer: The 'published' relationship is the relationship between the authors and the authors' data.\nQuestion: What is the 'published' relationship for f",
+      "token_f1": 0.04,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000027",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'ability' relationship for neural networks?",
+      "expected_output": "neural networks ability counterfactual reasoning.",
+      "generated_output": "The 'ability' relationship is the relationship between the number of neurons in the network and the number of neurons in the network.\nQuestion: What is the 'capacity' relationship for neural networks?\nAnswer: The 'capacity' relationship is the relationship between the number of neurons in the network and the number of neurons in",
+      "token_f1": 0.0351,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000028",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'attracts_curiosity_of' relationship for neural computation?",
+      "expected_output": "neural computation attracts_curiosity_of symbolic ai.",
+      "generated_output": "The 'attracts_curiosity_of' relationship is a measure of the number of neural connections that are active in a given neural network. The 'attracts_curiosity_of' relationship is a measure of the number of neural connections that are active in a given neural network.\nQuestion: What",
+      "token_f1": 0.0426,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000029",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is example of' relationship for deepmind\u2019s alphago?",
+      "expected_output": "deepmind\u2019s alphago is example of type 2 neural-symbolic integration.",
+      "generated_output": "The 'is example of' relationship is a relationship between the 'is example of' relationship and the 'is example of' relationship.\nQuestion: What is the 'is example of' relationship for deepmind\u2019s alphago?\nAnswer: The 'is example of' relationship is a relationship between the",
+      "token_f1": 0.1176,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000030",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is described as' relationship for logic?",
+      "expected_output": "logic is described as calculus of computer science.",
+      "generated_output": "The 'is described as' relationship is a relationship between two variables.\nQuestion: What is the 'is described as' relationship for logic?\nAnswer: The 'is described as' relationship is a relationship between two variables.\nQuestion: What is the 'is described as' relationship for logic?\nAnswer:",
+      "token_f1": 0.0769,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000031",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'used_in' relationship for knowledge graphs?",
+      "expected_output": "knowledge graphs used_in graph neural networks.",
+      "generated_output": "The 'used_in' relationship is the relationship between the graph and the data.\nQuestion: What is the 'used_in' relationship for data?\nAnswer: The 'used_in' relationship is the relationship between the graph and the data.\nQuestion: What is the 'used_in' relationship",
+      "token_f1": 0.0444,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000032",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is_influenced_by' relationship for counterfactuals?",
+      "expected_output": "counterfactuals is_influenced_by john stuart mill.",
+      "generated_output": "The 'is_influenced_by' relationship is a measure of the degree to which a given hypothesis is influenced by the evidence.\nQuestion: What is the 'is_influenced_by' relationship for the 'influenced' hypothesis?\nAnswer: The 'is_influenced_",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000033",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'enables' relationship for neural-symbolic computing?",
+      "expected_output": "neural-symbolic computing enables counterfactual reasoning.",
+      "generated_output": "The 'enables' relationship is a relationship between the number of neurons in the brain and the number of neurons in the brain. The number of neurons in the brain is the number of neurons in the brain that are active at the time of the neuron activation.\nQuestion: What is the 'enables' relationship for",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000034",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'requiresProofOfCorrespondence' relationship for neural networks?",
+      "expected_output": "neural networks requiresProofOfCorrespondence higher-order logic.",
+      "generated_output": "The 'requiresProofOfCorrespondence' relationship is a relationship between the number of nodes in a network and the number of nodes in the network.\nQuestion: What is the 'requiresProofOfCorrespondence' relationship for neural networks?\nAnswer: The 'requiresProofOfCorrespondence' relationship is a",
+      "token_f1": 0.0476,
+      "exact_match": false
+    }
+  ]
+}

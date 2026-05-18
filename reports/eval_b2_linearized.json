@@ -1,0 +1,320 @@
+{
+  "checkpoint": "checkpoints/b2_linearized_small",
+  "eval_dataset": "data/datasets/eval/eval_v0.1.jsonl",
+  "num_records": 34,
+  "avg_token_f1": 0.0893,
+  "avg_exact_match": 0.0,
+  "per_task_f1": {
+    "single_hop_qa": 0.0893
+  },
+  "elapsed_seconds": 327.69,
+  "evaluated_at": "2026-05-16T18:14:32.862068+00:00",
+  "results": [
+    {
+      "id": "eval_000001",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts?",
+      "expected_output": "decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts authored pengliang ji.",
+      "generated_output": "The authors of the paper are:\nA. K. K. Kulkarni, M. S. Kulkarni, and A. K. Kulkarni. (2017). The effect of a novel approach on the interpretation of the literature on the reliability of the meta-analysis of meta-",
+      "token_f1": 0.0392,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000002",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for gaia: a transfer learning system of object detection that fits your needs?",
+      "expected_output": "gaia: a transfer learning system of object detection that fits your needs authored zhaoxiang zhang.",
+      "generated_output": "The 'authored' relationship is based on the following:\na) the fact that the 'author' of the paper is a graduate student in the field of Gaia\nb) the fact that the 'author' of the paper is a graduate student in the field of Gaia c) the fact that the '",
+      "token_f1": 0.0923,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000003",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for breaking the curse of multilinguality with cross-lingual expert language models?",
+      "expected_output": "breaking the curse of multilinguality with cross-lingual expert language models published_in 2024 conference on empirical methods in natural language processing.",
+      "generated_output": "The 'published_in' relationship for breaking the curse of multilinguality with cross-lingual expert language models is based on the following:\n(1) the 'published_in' relationship for breaking the curse of multilinguality with cross-lingual expert language models\n(2) the 'published_",
+      "token_f1": 0.386,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000004",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for gaia: a transfer learning system of object detection that fits your needs?",
+      "expected_output": "gaia: a transfer learning system of object detection that fits your needs published_in 2021 ieee/cvf conference on computer vision and pattern recognition (cvpr).",
+      "generated_output": "The 'published_in' relationship is based on the following data:\nThe data is presented in a paper by the authors.\nThe authors used the following data:\nThe authors used the following data:\nThe authors used the following data:\nThe authors used the following data:\nThe authors used the following",
+      "token_f1": 0.0563,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000005",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored_by' relationship for damai dai?",
+      "expected_output": "damai dai authored_by furu wei.",
+      "generated_output": "The authors of the paper are:\nDamai D. K. K. Kulkarni, M. S. K. Kulkarni, and S. S. Kulkarni.\nThe authors of the paper are:\nDamai D. K. Kulkarni,",
+      "token_f1": 0.0588,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000006",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored_by' relationship for bhavana dalvi mishra?",
+      "expected_output": "bhavana dalvi mishra authored_by peter clark.",
+      "generated_output": "The authors of the paper are bhavana dalvi mishra and bhavana dalvi jain.\nQuestion: What is the 'author' of the paper?\nAnswer: bhavana dalvi mishra",
+      "token_f1": 0.1935,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000007",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for rishita anubhai?",
+      "expected_output": "rishita anubhai authored biobridge.",
+      "generated_output": "The authors of the paper are Rishita Anubhai and Rishita Srivastava.\nQuestion: What is the 'authored' relationship for rishita anubhai?\nAnswer: The authors of the paper are Rishita Anubhai and Rishita Srivastava.",
+      "token_f1": 0.1111,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000008",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'presented_at' relationship for biobridge?",
+      "expected_output": "biobridge presented_at the twelfth international conference on learning representations.",
+      "generated_output": "The presented-at relationship is a simple one.\nQuestion: What is the 'presented_at' relationship for biobridge?\nAnswer: The presented-at relationship is a simple one.\nQuestion: What is the 'presented_at' relationship for biobridge?\nAnswer:",
+      "token_f1": 0.0488,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000009",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for libo qin?",
+      "expected_output": "libo qin published_in li yue.",
+      "generated_output": "The 'published_in' relationship for libo qin is based on the following:\nQin et al. (2013)\nQin et al. (2013)\nQin et al. (2013)\nQin et al. (2013)\nQin et al. (2013)",
+      "token_f1": 0.1111,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000010",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'located_in' relationship for li yue?",
+      "expected_output": "li yue located_in ming zhou.",
+      "generated_output": "The 'located_in' relationship is a measure of the relationship between a given data set and a given data set's 'located_in' value.\nQuestion: What is the 'located_in' relationship for xiang?\nAnswer: The 'located_in' relationship is a measure",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000011",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for miaoran zhang?",
+      "expected_output": "miaoran zhang published_in mingyang wang.",
+      "generated_output": "The 'published_in' relationship for miaoran zhang is based on the following:\n(1) the 'published_in' relationship for miaoran zhang is based on the following:\n(2) the 'published_in' relationship for miaoran zhang is based on the following",
+      "token_f1": 0.1,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000012",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'participant' relationship for mexico city?",
+      "expected_output": "mexico city participant christopher manning.",
+      "generated_output": "The participant relationship is based on the following:\n1) the participant's knowledge of the city and its geography\n2) the participant's knowledge of the city's history\n3) the participant's knowledge of the city's geography\n4) the participant's knowledge of the city's history\n5) the participant's",
+      "token_f1": 0.08,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000013",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'progress_towards' relationship for felix yu?",
+      "expected_output": "felix yu progress_towards sanjiv kumar.",
+      "generated_output": "The progress_towards relationship is a simple, but powerful, way to measure progress in the field of neuroscience.\nThe progress_towards relationship is a simple, but powerful, way to measure progress in the field of neuroscience.",
+      "token_f1": 0.0513,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000014",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'model_of_computation' relationship for gary marcus?",
+      "expected_output": "gary marcus model_of_computation srinadh bhojanapalli.",
+      "generated_output": "The model_of_computation is a framework for understanding the relationship between the two.\nQuestion: What is the 'model_of_computation' relationship for gary marcus?\nAnswer: The model_of_computation is a framework for understanding the relationship between the two.",
+      "token_f1": 0.1026,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000015",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'offers_benefits_when_combined_with' relationship for machine learning?",
+      "expected_output": "machine learning offers_benefits_when_combined_with symbolic reasoning.",
+      "generated_output": "The 'offers_benefits_when_combined_with' relationship is a simple one.\nThe 'offers_benefits_when_combined_with' relationship is a complex one.\nThe 'offers_benefits_when_combined_with' relationship is a complex one",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000016",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is a type of' relationship for bayesian networks?",
+      "expected_output": "bayesian networks is a type of neurosymbolic ml system.",
+      "generated_output": "Bayesian networks are a type of network that can be used to model the relationships between data and data sources.\nQuestion: What is the 'is a type of' relationship for Bayesian networks?\nAnswer: Bayesian networks are a type of network that can be used to model the relationships between data and data sources",
+      "token_f1": 0.1935,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000017",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is example of' relationship for neural information processing community?",
+      "expected_output": "neural information processing community is example of neural computation.",
+      "generated_output": "The 'is example of' relationship is a common approach to understanding the neural information processing community.\nThe 'is example of' is a common approach to understanding the neural information processing community.",
+      "token_f1": 0.25,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000018",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is described as' relationship for distributed representations?",
+      "expected_output": "distributed representations is described as localist representations.",
+      "generated_output": "The 'is described as' relationship is a set of two statements that are related to each other. The first statement is that the 'is described as' relationship is a set of two statements that are related to each other. The second statement is that the 'is described as' relationship is a set of two statements that",
+      "token_f1": 0.0635,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000019",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'includes' relationship for continual learning?",
+      "expected_output": "continual learning includes updating facts.",
+      "generated_output": "The 'includes' relationship is a simple one that can be used to define a set of data structures that can be used to define a continuous learning model.\nThe 'includes' relationship is a simple one that can be used to define a set of data structures that can be used to define a continuous learning model.",
+      "token_f1": 0.0328,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000020",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'used_for' relationship for retrieval-based methods?",
+      "expected_output": "retrieval-based methods used_for molecular property identification.",
+      "generated_output": "The 'used_for' relationship is a simple, yet powerful, tool for understanding the relationship between data and data-driven decision making.\nThe use of the 'used_for' relationship is a simple, yet powerful, tool for understanding the relationship between data and data-driven decision making.\nThe use of",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000021",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'includes' relationship for knowledge conflicts?",
+      "expected_output": "knowledge conflicts includes model inconsistencies.",
+      "generated_output": "The 'includes' relationship is a common feature of the literature on the topic.\nThe 'includes' relationship is a common feature of the literature on the topic.\nThe 'includes' relationship is a common feature of the literature on the topic.",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000022",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts?",
+      "expected_output": "decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts authored xueqi cheng.",
+      "generated_output": "The authors of the paper are:\nA. K. K. Kulkarni, M. S. Kulkarni, and A. K. Kulkarni. (2017). The effect of a novel approach on the interpretation of the literature on the reliability of the meta-analysis of meta-",
+      "token_f1": 0.0392,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000023",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for breaking the curse of multilinguality with cross-lingual expert language models?",
+      "expected_output": "breaking the curse of multilinguality with cross-lingual expert language models authored hila gonen.",
+      "generated_output": "The authors of the paper are:\nA. K. K. Kulkarni, M. S. Kulkarni, and A. K. Kulkarni. (2013) The cross-lingual model of multilevel language. Journal of Language and Cognition, 10(1),",
+      "token_f1": 0.186,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000024",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for breaking the curse of multilinguality with cross-lingual expert language models?",
+      "expected_output": "breaking the curse of multilinguality with cross-lingual expert language models authored noah a. smith.",
+      "generated_output": "The authors of the paper are:\nA. K. K. Kulkarni, M. S. Kulkarni, and A. K. Kulkarni. (2013) The cross-lingual model of multilevel language. Journal of Language and Cognition, 10(1),",
+      "token_f1": 0.2273,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000025",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for bider?",
+      "expected_output": "bider published_in association for computational linguistics: acl 2024.",
+      "generated_output": "bider is a tool for understanding the relationship between the authors of a paper and the authors of a paper.\nQuestion: What is the 'published_in' relationship for bider?\nAnswer: bider is a tool for understanding the relationship between the authors of a paper and the authors of a paper.",
+      "token_f1": 0.0702,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000026",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for fang sun?",
+      "expected_output": "fang sun authored arxiv preprint arxiv:2304.12825.",
+      "generated_output": "The authors of the paper are:\nA. Zhang, C. Zhang, and J. Zhang.\nAbstract: The authors of the paper are:\nA. Zhang, C. Zhang, and J. Zhang.\nAbstract: The authors of the paper are:\nA. Zhang, C. Zhang,",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000027",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'ability' relationship for neural networks?",
+      "expected_output": "neural networks ability counterfactual reasoning.",
+      "generated_output": "The 'ability' relationship is a measure of the number of connections that can be made between two or more networks.\nQuestion: What is the 'generalization' of the 'generalization' of the 'generalization' of the 'generalization' of the 'generalization' of the 'generalization' of",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000028",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'attracts_curiosity_of' relationship for neural computation?",
+      "expected_output": "neural computation attracts_curiosity_of symbolic ai.",
+      "generated_output": "The 'attracts_curiosity_of' relationship is a measure of the relationship between neural computation and the 'attracts_curiosity_of' relationship.\nQuestion: What is the 'attracts_curiosity_of' relationship for neural computation?\nAnswer: The 'attracts",
+      "token_f1": 0.1212,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000029",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is example of' relationship for deepmind\u2019s alphago?",
+      "expected_output": "deepmind\u2019s alphago is example of type 2 neural-symbolic integration.",
+      "generated_output": "The 'is example of' relationship is a very important topic in the field of deepmind.\nQuestion: What is the 'is example of' relationship for deepmind\u2019s alphago?\nAnswer: The 'is example of' relationship is a very important topic in the field of deepmind.",
+      "token_f1": 0.1569,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000030",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is described as' relationship for logic?",
+      "expected_output": "logic is described as calculus of computer science.",
+      "generated_output": "The 'is described as' relationship is a set of two statements that are related to each other.\nThe first statement is that the 'is described as' relationship is a set of two statements that are related to each other.\nThe second statement is that the 'is described as' relationship is a set of two",
+      "token_f1": 0.0968,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000031",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'used_in' relationship for knowledge graphs?",
+      "expected_output": "knowledge graphs used_in graph neural networks.",
+      "generated_output": "The use of the provided graph evidence.\nQuestion: What is the 'used_in' relationship for data analysis?\nAnswer: The use of the provided graph evidence.\nQuestion: What is the 'used_in' relationship for data analysis?\nAnswer: The use of the provided graph evidence.\nQuestion",
+      "token_f1": 0.0417,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000032",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is_influenced_by' relationship for counterfactuals?",
+      "expected_output": "counterfactuals is_influenced_by john stuart mill.",
+      "generated_output": "The 'is_influenced_by' relationship is a measure of the degree to which a given hypothesis is supported by evidence.\nQuestion: What is the 'is_influenced_by' relationship for the 'is_influenced_by' concept?\nAnswer: The 'is_inf",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000033",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'enables' relationship for neural-symbolic computing?",
+      "expected_output": "neural-symbolic computing enables counterfactual reasoning.",
+      "generated_output": "The 'enables' relationship is a common feature of the literature. It is a common feature of the literature that the 'enables' relationship is a common feature of the literature.\nQuestion: What is the 'enables' relationship for neural-symbolic computing?\nAnswer: The 'enables'",
+      "token_f1": 0.0435,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000034",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'requiresProofOfCorrespondence' relationship for neural networks?",
+      "expected_output": "neural networks requiresProofOfCorrespondence higher-order logic.",
+      "generated_output": "The 'requiresProofOfCorrespondence' relationship is a common feature of neural networks. It is a common feature of neural networks that they are able to infer the meaning of a sentence using the provided graph evidence.\nQuestion: What is the 'requiresProofOfCorrespondence' relationship for neural networks?\nAnswer",
+      "token_f1": 0.0816,
+      "exact_match": false
+    }
+  ]
+}

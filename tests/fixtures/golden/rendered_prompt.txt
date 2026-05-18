@@ -1,0 +1,63 @@
+You are extracting a knowledge graph from a document chunk.
+
+Document ID:
+doc_000001
+
+Chunk ID:
+chunk_000001
+
+Knowledge graph schema:
+schema_version: kg_schema_v0.1
+
+entity_types:
+  - name: Concept
+    required_fields: [id, canonical_name]
+  - name: Document
+    required_fields: [id, canonical_name]
+  - name: Person
+    required_fields: [id, canonical_name]
+
+relation_types:
+  - name: supports
+    domain: Concept
+    range: Concept
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+  - name: defines
+    domain: Document
+    range: Concept
+    head_arity: {min: 1, max: 1}
+    tail_arity: {min: 1, max: null}
+
+  - name: authored
+    domain: Person
+    range: Document
+    head_arity: {min: 1, max: null}
+    tail_arity: {min: 1, max: null}
+
+Allowed entity types:
+Concept, Document, Person
+
+Allowed relation types:
+supports, defines, authored
+
+Text chunk:
+# Knowledge Graphs
+
+A knowledge graph is a structured representation of entities and their relationships.
+Knowledge graphs provide a way to encode factual knowledge in a machine-readable format.
+They are widely used in search engines, question answering systems, and recommendation engines.
+
+Knowledge graphs support factual grounding and reasoning in AI systems.
+By encoding domain knowledge as a graph, AI systems can leverage structured information
+to improve accuracy and reduce hallucinations.
+
+Entities in a knowledge graph are assigned types such as Person, Organization, or Concept.
+Relations between entities are typed and directed, forming a labeled directed graph.
+A hypergraph generalizes this by allowing a single relation to connect multiple head and tail entities.
+
+Extract candidate entities and relations from the text.
+Return only valid JSON matching the required output schema.
+Do not invent facts that are not supported by the text.
+Include evidence spans for every relation.

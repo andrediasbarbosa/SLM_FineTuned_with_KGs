@@ -1,0 +1,320 @@
+{
+  "checkpoint": "checkpoints/b4_kg_sft_small",
+  "eval_dataset": "data/datasets/eval/eval_v0.1.jsonl",
+  "num_records": 34,
+  "avg_token_f1": 0.2184,
+  "avg_exact_match": 0.0,
+  "per_task_f1": {
+    "single_hop_qa": 0.2184
+  },
+  "elapsed_seconds": 67.02,
+  "evaluated_at": "2026-05-16T20:14:46.148970+00:00",
+  "results": [
+    {
+      "id": "eval_000001",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts?",
+      "expected_output": "decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts authored pengliang ji.",
+      "generated_output": "decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts. Evidence: The use of llms\u2019 confidence on edited facts.",
+      "token_f1": 0.5625,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000002",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for gaia: a transfer learning system of object detection that fits your needs?",
+      "expected_output": "gaia: a transfer learning system of object detection that fits your needs authored zhaoxiang zhang.",
+      "generated_output": "gaia: a transfer learning system of object detection that fits your needs. Evidence: gaia: a transfer learning system of object detection that fits your needs.",
+      "token_f1": 0.55,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000003",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for breaking the curse of multilinguality with cross-lingual expert language models?",
+      "expected_output": "breaking the curse of multilinguality with cross-lingual expert language models published_in 2024 conference on empirical methods in natural language processing.",
+      "generated_output": "breaking the curse of multilinguality with cross-lingual expert language models. Evidence: The following is a graph of the available graph evidence.",
+      "token_f1": 0.439,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000004",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for gaia: a transfer learning system of object detection that fits your needs?",
+      "expected_output": "gaia: a transfer learning system of object detection that fits your needs published_in 2021 ieee/cvf conference on computer vision and pattern recognition (cvpr).",
+      "generated_output": "gaia: a transfer learning system of object detection that fits your needs. Evidence: gaia: a transfer learning system of object detection that fits your needs.",
+      "token_f1": 0.4583,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000005",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored_by' relationship for damai dai?",
+      "expected_output": "damai dai authored_by furu wei.",
+      "generated_output": "damai dai provides evidence for a new model for the relationship between damai dai and the korean language.",
+      "token_f1": 0.1739,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000006",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored_by' relationship for bhavana dalvi mishra?",
+      "expected_output": "bhavana dalvi mishra authored_by peter clark.",
+      "generated_output": "bhavana dalvi mishra provides evidence for a new model for understanding the relationship between bhavana dalvi mishra and the neural network.",
+      "token_f1": 0.2222,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000007",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for rishita anubhai?",
+      "expected_output": "rishita anubhai authored biobridge.",
+      "generated_output": "rishita anubhai provides evidence for a new model for the neural network problem. Evidence: rishita anubhai is a model for neural network problem.",
+      "token_f1": 0.1481,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000008",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'presented_at' relationship for biobridge?",
+      "expected_output": "biobridge presented_at the twelfth international conference on learning representations.",
+      "generated_output": "biobridge is a biobridge that integrates the knowledge of biobridge with the knowledge of computational linguistics.",
+      "token_f1": 0.16,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000009",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for libo qin?",
+      "expected_output": "libo qin published_in li yue.",
+      "generated_output": "libo qin provides evidence for a new approach to understanding the neural network. Evidence: The neural network is a neural network with a neural network-based model.",
+      "token_f1": 0.129,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000010",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'located_in' relationship for li yue?",
+      "expected_output": "li yue located_in ming zhou.",
+      "generated_output": "li yue is located in the context of li yue. Evidence: Li yue is a member of the Li yue family.",
+      "token_f1": 0.1538,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000011",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for miaoran zhang?",
+      "expected_output": "miaoran zhang published_in mingyang wang.",
+      "generated_output": "miaoran zhang provides 'published_in' information for miaoran zhang. Evidence: miaoran zhang is a member of the miaoran zhang family of zhengsheng and zhengsheng zhu.",
+      "token_f1": 0.1379,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000012",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'participant' relationship for mexico city?",
+      "expected_output": "mexico city participant christopher manning.",
+      "generated_output": "miocca.com provides evidence for the 'participant' relationship for mexico city. Evidence: miocca.com provides evidence for the 'participant' relationship for mexico city.",
+      "token_f1": 0.0769,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000013",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'progress_towards' relationship for felix yu?",
+      "expected_output": "felix yu progress_towards sanjiv kumar.",
+      "generated_output": "felix yu provides evidence for the existence of a new neural network for the unification of the two-dimensional representation of the zodiac.",
+      "token_f1": 0.1481,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000014",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'model_of_computation' relationship for gary marcus?",
+      "expected_output": "gary marcus model_of_computation srinadh bhojanapalli.",
+      "generated_output": "gary marcus may be related to gary marcus through gary marcus. Evidence: gary marcus is a model-based computational linguist.",
+      "token_f1": 0.1667,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000015",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'offers_benefits_when_combined_with' relationship for machine learning?",
+      "expected_output": "machine learning offers_benefits_when_combined_with symbolic reasoning.",
+      "generated_output": "The available graph evidence does not support that claim.",
+      "token_f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000016",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is a type of' relationship for bayesian networks?",
+      "expected_output": "bayesian networks is a type of neurosymbolic ml system.",
+      "generated_output": "Bayesian networks may be related to Bayesian inference. Evidence: Bayesian networks may be related to Bayesian inference. Evidence: Bayesian networks may be related to Bayesian inference. Evidence: Bayesian networks may be related to Bayesian inference. Evidence: Bayesian networks may be related to Bayesian inference. Evidence",
+      "token_f1": 0.0741,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000017",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is example of' relationship for neural information processing community?",
+      "expected_output": "neural information processing community is example of neural computation.",
+      "generated_output": "neural information processing community may be related to the recognition of a new knowledge. Evidence: Neural information processing community is a new knowledge.",
+      "token_f1": 0.375,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000018",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is described as' relationship for distributed representations?",
+      "expected_output": "distributed representations is described as localist representations.",
+      "generated_output": "distributed representations may be related to distributed representations through distributed representations. Evidence: distributed representations may be related to distributed representations through distributed representations.",
+      "token_f1": 0.2,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000019",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'includes' relationship for continual learning?",
+      "expected_output": "continual learning includes updating facts.",
+      "generated_output": "continual learning may be related to continuous learning. Evidence: Continuous learning is a process of learning that is based on continuous learning.",
+      "token_f1": 0.1481,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000020",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'used_for' relationship for retrieval-based methods?",
+      "expected_output": "retrieval-based methods used_for molecular property identification.",
+      "generated_output": "retrieval-based methods may be used for retrieval-based methods. Evidence: retrieval-based methods may be used for retrieval-based methods. Evidence: retrieval-based methods may be used for retrieval-based methods. Evidence: retrieval-based methods may be used for retrieval-based methods. Evidence: retrieval-based methods",
+      "token_f1": 0.0909,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000021",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'includes' relationship for knowledge conflicts?",
+      "expected_output": "knowledge conflicts includes model inconsistencies.",
+      "generated_output": "knowledge conflicts may be related to knowledge conflicts. Evidence: The following graph shows: [ENTITY] knowledge conflicts: [RELATION] knowledge conflicts: [ENTITY] knowledge conflicts: [ENTITY] knowledge conflicts: [ENTITY] knowledge conflicts: [ENTITY] knowledge conflicts: [ENTITY] knowledge conflicts",
+      "token_f1": 0.1026,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000022",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts?",
+      "expected_output": "decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts authored xueqi cheng.",
+      "generated_output": "decoding by contrasting knowledge: enhancing llms\u2019 confidence on edited facts. Evidence: The use of llms\u2019 confidence on edited facts.",
+      "token_f1": 0.5625,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000023",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for breaking the curse of multilinguality with cross-lingual expert language models?",
+      "expected_output": "breaking the curse of multilinguality with cross-lingual expert language models authored hila gonen.",
+      "generated_output": "breaking the curse of multilinguality with cross-lingual expert language models. Evidence: The following is a statement of the available graph evidence:",
+      "token_f1": 0.5294,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000024",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for breaking the curse of multilinguality with cross-lingual expert language models?",
+      "expected_output": "breaking the curse of multilinguality with cross-lingual expert language models authored noah a. smith.",
+      "generated_output": "breaking the curse of multilinguality with cross-lingual expert language models. Evidence: The following is a statement of the available graph evidence:",
+      "token_f1": 0.5143,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000025",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'published_in' relationship for bider?",
+      "expected_output": "bider published_in association for computational linguistics: acl 2024.",
+      "generated_output": "bider is a computational model for the understanding of natural language processing. Evidence: bider is a computational model for the understanding of natural language processing.",
+      "token_f1": 0.1818,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000026",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'authored' relationship for fang sun?",
+      "expected_output": "fang sun authored arxiv preprint arxiv:2304.12825.",
+      "generated_output": "fang sun provides evidence for a new model for the neural network. Evidence: fang sun is a neural network with a neural network-based model for the neural network.",
+      "token_f1": 0.1176,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000027",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'ability' relationship for neural networks?",
+      "expected_output": "neural networks ability counterfactual reasoning.",
+      "generated_output": "neural networks may be used to model the emergence of new knowledge. Evidence: Neural networks may be used to model the emergence of new knowledge. Evidence: Neural networks may be used to model the emergence of new knowledge.",
+      "token_f1": 0.093,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000028",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'attracts_curiosity_of' relationship for neural computation?",
+      "expected_output": "neural computation attracts_curiosity_of symbolic ai.",
+      "generated_output": "neural computation may be related to the 'attracts_curiosity_of' relationship for neural computation. Evidence: Neural computation may be related to the 'attracts_curiosity_of' relationship for neural computation.",
+      "token_f1": 0.1333,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000029",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is example of' relationship for deepmind\u2019s alphago?",
+      "expected_output": "deepmind\u2019s alphago is example of type 2 neural-symbolic integration.",
+      "generated_output": "deepminds alphago provides evidence for the existence of deep-learning models. Evidence: Deep-learning models for deep-learning neural networks.",
+      "token_f1": 0.1538,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000030",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is described as' relationship for logic?",
+      "expected_output": "logic is described as calculus of computer science.",
+      "generated_output": "logic may be related to logic through logic. Evidence: The use of logic in logic-based proofs.",
+      "token_f1": 0.1667,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000031",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'used_in' relationship for knowledge graphs?",
+      "expected_output": "knowledge graphs used_in graph neural networks.",
+      "generated_output": "knowledge graphs may be related to knowledge graphs through knowledge graphs. Evidence: The use of knowledge graphs for knowledge graphs is supported by:",
+      "token_f1": 0.1379,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000032",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'is_influenced_by' relationship for counterfactuals?",
+      "expected_output": "counterfactuals is_influenced_by john stuart mill.",
+      "generated_output": "counterfactuals may be related to counterfactuals through counterfactuals. Evidence: Counterfactuals may be influenced by counterfactuals through counterfactuals. Evidence: Counterfactuals may be influenced by counterfactuals through counterfactuals. Evidence: Counterfactuals",
+      "token_f1": 0.0606,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000033",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'enables' relationship for neural-symbolic computing?",
+      "expected_output": "neural-symbolic computing enables counterfactual reasoning.",
+      "generated_output": "neural-symbolic computing provides 'enables' for neural-symbolic computing. Evidence: Neural-symbolic computing is a neural-symbolic computation that uses a hierarchical approach to represent information.",
+      "token_f1": 0.1481,
+      "exact_match": false
+    },
+    {
+      "id": "eval_000034",
+      "task_type": "single_hop_qa",
+      "input": "What is the 'requiresProofOfCorrespondence' relationship for neural networks?",
+      "expected_output": "neural networks requiresProofOfCorrespondence higher-order logic.",
+      "generated_output": "neural networks provides 'requiresProofOfCorrespondence' relationship for neural networks. Evidence: neural networks provides 'requiresProofOfCorrespondence' relationship for neural networks. Evidence: neural networks provides 'requiresProofOfCorrespondence' relationship for neural networks. Evidence: neural networks provides 'requiresProofOfCorrespondence",
+      "token_f1": 0.1111,
+      "exact_match": false
+    }
+  ]
+}

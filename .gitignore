@@ -1,0 +1,26 @@
+# Build artifacts
+build/
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+DartConfiguration.tcl
+Makefile
+*.o
+*.a
+*.so
+
+# Model checkpoints (too large for GitHub)
+checkpoints/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Cache
+.cache/
+
+# Claude Code session files
+.claude/

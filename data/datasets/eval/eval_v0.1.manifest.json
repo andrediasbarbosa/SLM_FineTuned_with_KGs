@@ -1,0 +1,14 @@
+{
+  "config_hash": "",
+  "content_hash": "sha256:f0671fa6facd9859eee9e8eacd94e1e76902d63971ba3b40c6b35624f6843ac3",
+  "created_at": "2026-05-13T20:32:21Z",
+  "generator": "eval_builder_v0.1",
+  "id": "eval_v0.1",
+  "kg_snapshot_id": "kg_domain_v0.1",
+  "skipped_records": 0,
+  "test_records": 34,
+  "token_estimate": 3342,
+  "total_records": 34,
+  "train_records": 0,
+  "val_records": 0
+}

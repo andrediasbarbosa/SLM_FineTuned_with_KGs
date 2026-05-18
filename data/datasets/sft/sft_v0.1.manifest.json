@@ -1,0 +1,14 @@
+{
+  "config_hash": "",
+  "content_hash": "sha256:2c9b877dfbbc8b5ba79a7b70e6304a9deee6c685c4f992a14feb8a46059202b2",
+  "created_at": "2026-05-13T20:30:02Z",
+  "generator": "sft_builder_v0.1",
+  "id": "sft_v0.1",
+  "kg_snapshot_id": "kg_domain_v0.1",
+  "skipped_records": 0,
+  "test_records": 127,
+  "token_estimate": 218812,
+  "total_records": 1405,
+  "train_records": 1141,
+  "val_records": 137
+}

@@ -1,0 +1,29 @@
+kg_extraction:
+  provider: openai                        # openai | gemini | mock | replay
+  extraction_mode: entities_and_relations
+  cache_enabled: true
+  cache_dir: .cache/kg_extraction
+  replay_mode: false
+  test_mode: false                        # set true in CI to force mock provider
+
+  prompts:
+    prompt_set_id: kg_extract_promptset_v0.1
+    system_prompt_path: prompts/kg_system_prompt_v0.1.txt
+    user_prompt_path: prompts/kg_user_prompt_v0.2.txt
+
+  output:
+    expected_format: json
+    schema_path: configs/kg_schema.yaml
+    strict_validation: false
+
+  retry:
+    max_attempts: 3
+    initial_backoff_ms: 500
+    max_backoff_ms: 8000
+
+  timeout:
+    connect_ms: 5000
+    request_ms: 30000
+
+  concurrency:
+    max_concurrent_requests: 4

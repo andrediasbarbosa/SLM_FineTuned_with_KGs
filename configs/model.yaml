@@ -1,0 +1,11 @@
+# Model and LoRA configuration shared across fine-tuning phases.
+# tokenizer_path: if set, loads tokenizer from here instead of base_checkpoint.
+#   Set to checkpoints/tokenizer_kg_v0.1 after running extend_tokenizer.py (T5.3).
+tokenizer_path: ""
+
+lora:
+  rank: 8
+  alpha: 16
+  dropout: 0.05
+  # GPT-2 attention projection weight — adjust per architecture
+  target_modules: ["c_attn"]
